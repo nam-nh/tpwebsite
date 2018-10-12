@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "tpwebsite",
+    "packageName": "tp.web.application",
+    "packageFolder": "tp/web/application",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "vi",
+    "languages": [
+      "en",
+      "vi"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.4.2",
+    "jwtSecretKey": "Mjg4NmM0NTM3YTNlODRiMmM4ZTVlM2I5N2RhMGIxNGM4OGMzZTM0MjE5NjI2ZTRmOWQwZTM1MTRmYmFlOGRjNTkxMDgzMDE0NjMyNzU5ODczYmNiMjE3ZDI2YWQ3NWU5ODBkMjUzYzZlN2Q3NDJkYmM3ZTI3NDUzYmZhNTJlOGQ="
+  },
+  "git-provider": "GitHub",
+  "git-company": "nam-nh",
+  "repository-name": "tpwebsite"
+}
