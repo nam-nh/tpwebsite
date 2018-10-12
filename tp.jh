@@ -1,0 +1,58 @@
+entity Category {
+    categoryName String required
+    categoryDescription String
+    
+}
+
+entity ItemGroup {
+	itemGroupName String required
+    itemGroupDescription String
+}
+
+entity ItemSubGroup {
+	itemSubGroupName String required
+    itemSubGroupDescription String
+}
+
+entity Item {
+	itemName String required
+    itemImage String required
+    itemDescription String
+    itemQuantity Long required
+    itemPrice Long required
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+entity Service {
+	serviceName String required,
+	serviceDescription String,
+    serviceImage String required,
+}
+
+entity News {
+	newsTitle String required,
+    newsContent String required
+}
+
+entity Project {
+	projectName String required,
+	minSalary Long,
+	maxSalary Long
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Category{itemGroup} to ItemGroup,
+
+	ItemGroup{itemSubGroup} to	ItemSubGroup,
+    
+    ItemSubGroup{item} to	Item
+}
+
+// Set pagination options
+paginate Category, ItemGroup, ItemSubGroup, Service, Project with infinite-scroll
+paginate Item, News with pagination
+
