@@ -38,6 +38,16 @@ public class CacheConfiguration {
             cm.createCache(tp.web.application.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(tp.web.application.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(tp.web.application.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.Category.class.getName(), jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.Category.class.getName() + ".itemGroups", jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.ItemGroup.class.getName(), jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.ItemGroup.class.getName() + ".itemSubGroups", jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.ItemSubGroup.class.getName(), jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.ItemSubGroup.class.getName() + ".items", jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.Item.class.getName(), jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.Service.class.getName(), jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.News.class.getName(), jcacheConfiguration);
+            cm.createCache(tp.web.application.domain.Project.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

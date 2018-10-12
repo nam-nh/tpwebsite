@@ -7,6 +7,13 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "category": "Category",
+                "itemGroup": "Item Group",
+                "itemSubGroup": "Item Sub Group",
+                "item": "Item",
+                "service": "Service",
+                "news": "News",
+                "project": "Project",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

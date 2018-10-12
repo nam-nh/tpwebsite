@@ -12,6 +12,34 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import category, {
+  CategoryState
+} from 'app/entities/category/category.reducer';
+// prettier-ignore
+import itemGroup, {
+  ItemGroupState
+} from 'app/entities/item-group/item-group.reducer';
+// prettier-ignore
+import itemSubGroup, {
+  ItemSubGroupState
+} from 'app/entities/item-sub-group/item-sub-group.reducer';
+// prettier-ignore
+import item, {
+  ItemState
+} from 'app/entities/item/item.reducer';
+// prettier-ignore
+import service, {
+  ServiceState
+} from 'app/entities/service/service.reducer';
+// prettier-ignore
+import news, {
+  NewsState
+} from 'app/entities/news/news.reducer';
+// prettier-ignore
+import project, {
+  ProjectState
+} from 'app/entities/project/project.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +53,13 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly category: CategoryState;
+  readonly itemGroup: ItemGroupState;
+  readonly itemSubGroup: ItemSubGroupState;
+  readonly item: ItemState;
+  readonly service: ServiceState;
+  readonly news: NewsState;
+  readonly project: ProjectState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +75,13 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  category,
+  itemGroup,
+  itemSubGroup,
+  item,
+  service,
+  news,
+  project,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar
 });

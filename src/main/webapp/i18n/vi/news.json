@@ -1,0 +1,24 @@
+
+{
+    "tpwebsiteApp": {
+        "news" : {
+            "home": {
+                "title": "News",
+                "createLabel": "Thêm mới một News",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật News",
+                "search": "Tìm News"
+            },
+            "created": "Một News mới được tạo với định danh {{ param }}",
+            "updated": "Một News cập nhật với định danh {{ param }}",
+            "deleted": "Một News đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa News {{ id }}?"
+            },
+            "detail": {
+                "title": "News"
+            },
+            "newsTitle": "News Title",
+            "newsContent": "News Content"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "ItemGroup",
+    "fields": [
+        {
+            "fieldName": "itemGroupName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "itemGroupDescription",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "category",
+            "otherEntityName": "category",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "itemSubGroup",
+            "otherEntityName": "itemSubGroup",
+            "otherEntityRelationshipName": "itemGroup"
+        }
+    ],
+    "changelogDate": "20181012163607",
+    "entityTableName": "item_group",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

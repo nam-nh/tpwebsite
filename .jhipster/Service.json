@@ -1,0 +1,34 @@
+{
+    "name": "Service",
+    "fields": [
+        {
+            "fieldName": "serviceName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "serviceDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "serviceImage",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181012163610",
+    "javadoc": "Task entity.\n@author The JHipster team.",
+    "entityTableName": "service",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
