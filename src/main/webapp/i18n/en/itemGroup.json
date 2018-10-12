@@ -1,0 +1,26 @@
+
+{
+    "tpwebsiteApp": {
+        "itemGroup" : {
+            "home": {
+                "title": "Item Groups",
+                "createLabel": "Create a new Item Group",
+                "createOrEditLabel": "Create or edit a Item Group",
+                "search": "Search for Item Group"
+            },
+            "created": "A new Item Group is created with identifier {{ param }}",
+            "updated": "A Item Group is updated with identifier {{ param }}",
+            "deleted": "A Item Group is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Item Group {{ id }}?"
+            },
+            "detail": {
+                "title": "Item Group"
+            },
+            "itemGroupName": "Item Group Name",
+            "itemGroupDescription": "Item Group Description",
+            "category": "Category",
+            "itemSubGroup": "Item Sub Group"
+        }
+    }
+}

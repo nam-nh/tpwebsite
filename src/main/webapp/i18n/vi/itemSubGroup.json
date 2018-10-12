@@ -1,0 +1,26 @@
+
+{
+    "tpwebsiteApp": {
+        "itemSubGroup" : {
+            "home": {
+                "title": "Item Sub Groups",
+                "createLabel": "Thêm mới một Item Sub Group",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Item Sub Group",
+                "search": "Tìm Item Sub Group"
+            },
+            "created": "Một Item Sub Group mới được tạo với định danh {{ param }}",
+            "updated": "Một Item Sub Group cập nhật với định danh {{ param }}",
+            "deleted": "Một Item Sub Group đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Item Sub Group {{ id }}?"
+            },
+            "detail": {
+                "title": "Item Sub Group"
+            },
+            "itemSubGroupName": "Item Sub Group Name",
+            "itemSubGroupDescription": "Item Sub Group Description",
+            "itemGroup": "Item Group",
+            "item": "Item"
+        }
+    }
+}

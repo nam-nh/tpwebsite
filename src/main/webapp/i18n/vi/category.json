@@ -1,0 +1,25 @@
+
+{
+    "tpwebsiteApp": {
+        "category" : {
+            "home": {
+                "title": "Categories",
+                "createLabel": "Thêm mới một Category",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Category",
+                "search": "Tìm Category"
+            },
+            "created": "Một Category mới được tạo với định danh {{ param }}",
+            "updated": "Một Category cập nhật với định danh {{ param }}",
+            "deleted": "Một Category đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Category {{ id }}?"
+            },
+            "detail": {
+                "title": "Category"
+            },
+            "categoryName": "Category Name",
+            "categoryDescription": "Category Description",
+            "itemGroup": "Item Group"
+        }
+    }
+}
