@@ -83,7 +83,8 @@ export class Item extends React.Component<IItemProps, IItemState> {
         <h2 id="item-heading">
           <Translate contentKey="tpwebsiteApp.item.home.title">Items</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="tpwebsiteApp.item.home.createLabel">Create new Item</Translate>
           </Link>
         </h2>
@@ -151,7 +152,13 @@ export class Item extends React.Component<IItemProps, IItemState> {
                   <td>{item.itemDescription}</td>
                   <td>{item.itemQuantity}</td>
                   <td>{item.itemPrice}</td>
-                  <td>{item.itemSubGroup ? <Link to={`item-sub-group/${item.itemSubGroup.id}`}>{item.itemSubGroup.id}</Link> : ''}</td>
+                  <td>
+                    {item.itemSubGroup ? (
+                      <Link to={`item-sub-group/${item.itemSubGroup.id}`}>{item.itemSubGroup.itemSubGroupName}</Link>
+                    ) : (
+                      ''
+                    )}
+                  </td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${item.id}`} color="info" size="sm">

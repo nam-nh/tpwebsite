@@ -43,14 +43,15 @@ export class ItemGroupDetail extends React.Component<IItemGroupDetailProps> {
             <dt>
               <Translate contentKey="tpwebsiteApp.itemGroup.category">Category</Translate>
             </dt>
-            <dd>{itemGroupEntity.category ? itemGroupEntity.category.id : ''}</dd>
+            <dd>{itemGroupEntity.category ? itemGroupEntity.category.categoryName : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/item-group" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/item-group/${itemGroupEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

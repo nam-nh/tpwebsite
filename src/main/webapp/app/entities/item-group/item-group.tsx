@@ -89,7 +89,8 @@ export class ItemGroup extends React.Component<IItemGroupProps, IItemGroupState>
         <h2 id="item-group-heading">
           <Translate contentKey="tpwebsiteApp.itemGroup.home.title">Item Groups</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="tpwebsiteApp.itemGroup.home.createLabel">Create new Item Group</Translate>
           </Link>
         </h2>
@@ -154,7 +155,9 @@ export class ItemGroup extends React.Component<IItemGroupProps, IItemGroupState>
                     </td>
                     <td>{itemGroup.itemGroupName}</td>
                     <td>{itemGroup.itemGroupDescription}</td>
-                    <td>{itemGroup.category ? <Link to={`category/${itemGroup.category.id}`}>{itemGroup.category.id}</Link> : ''}</td>
+                    <td>
+                      {itemGroup.category ? <Link to={`category/${itemGroup.category.id}`}>{itemGroup.category.categoryName}</Link> : ''}
+                    </td>
                     <td className="text-right">
                       <div className="btn-group flex-btn-group-container">
                         <Button tag={Link} to={`${match.url}/${itemGroup.id}`} color="info" size="sm">

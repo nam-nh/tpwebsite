@@ -61,14 +61,15 @@ export class ItemDetail extends React.Component<IItemDetailProps> {
             <dt>
               <Translate contentKey="tpwebsiteApp.item.itemSubGroup">Item Sub Group</Translate>
             </dt>
-            <dd>{itemEntity.itemSubGroup ? itemEntity.itemSubGroup.id : ''}</dd>
+            <dd>{itemEntity.itemSubGroup ? itemEntity.itemSubGroup.itemSubGroupName : ''}</dd>
           </dl>
           <Button tag={Link} to="/entity/item" replace color="info">
             <FontAwesomeIcon icon="arrow-left" />{' '}
             <span className="d-none d-md-inline">
               <Translate contentKey="entity.action.back">Back</Translate>
             </span>
-          </Button>&nbsp;
+          </Button>
+          &nbsp;
           <Button tag={Link} to={`/entity/item/${itemEntity.id}/edit`} replace color="primary">
             <FontAwesomeIcon icon="pencil-alt" />{' '}
             <span className="d-none d-md-inline">

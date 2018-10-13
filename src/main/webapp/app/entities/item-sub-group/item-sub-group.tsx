@@ -89,7 +89,8 @@ export class ItemSubGroup extends React.Component<IItemSubGroupProps, IItemSubGr
         <h2 id="item-sub-group-heading">
           <Translate contentKey="tpwebsiteApp.itemSubGroup.home.title">Item Sub Groups</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
-            <FontAwesomeIcon icon="plus" />&nbsp;
+            <FontAwesomeIcon icon="plus" />
+            &nbsp;
             <Translate contentKey="tpwebsiteApp.itemSubGroup.home.createLabel">Create new Item Sub Group</Translate>
           </Link>
         </h2>
@@ -157,7 +158,7 @@ export class ItemSubGroup extends React.Component<IItemSubGroupProps, IItemSubGr
                     <td>{itemSubGroup.itemSubGroupDescription}</td>
                     <td>
                       {itemSubGroup.itemGroup ? (
-                        <Link to={`item-group/${itemSubGroup.itemGroup.id}`}>{itemSubGroup.itemGroup.id}</Link>
+                        <Link to={`item-group/${itemSubGroup.itemGroup.id}`}>{itemSubGroup.itemGroup.itemGroupName}</Link>
                       ) : (
                         ''
                       )}
