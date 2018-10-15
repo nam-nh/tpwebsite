@@ -92,26 +92,7 @@ export class RegisterPage extends React.Component<IRegisterProps, IRegisterState
                   match: { value: 'firstPassword', errorMessage: translate('global.messages.error.dontmatch') }
                 }}
               />
-              <Button id="register-submit" color="primary" type="submit">
-                <Translate contentKey="register.form.button">Register</Translate>
-              </Button>
             </AvForm>
-            <p>&nbsp;</p>
-            <Alert color="warning">
-              <span>
-                <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
-              </span>
-              <a className="alert-link">
-                <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
-              </a>
-              <span>
-                <Translate contentKey="global.messages.info.authenticated.suffix">
-                  , you can try the default accounts:
-                  <br />- Administrator (login="admin" and password="admin")
-                  <br />- User (login="user" and password="user").
-                </Translate>
-              </span>
-            </Alert>
           </Col>
         </Row>
       </div>

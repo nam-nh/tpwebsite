@@ -2,7 +2,6 @@ import React from 'react';
 import { Translate, translate } from 'react-jhipster';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Label, Alert, Row, Col } from 'reactstrap';
 import { AvForm, AvField, AvGroup, AvInput } from 'availity-reactstrap-validation';
-import { Link } from 'react-router-dom';
 
 export interface ILoginModalProps {
   showModal: boolean;
@@ -61,20 +60,6 @@ class LoginModal extends React.Component<ILoginModalProps> {
                 </AvGroup>
               </Col>
             </Row>
-            <div className="mt-1">&nbsp;</div>
-            <Alert color="warning">
-              <Link to="/reset/request">
-                <Translate contentKey="login.password.forgot">Did you forget your password?</Translate>
-              </Link>
-            </Alert>
-            <Alert color="warning">
-              <span>
-                <Translate contentKey="global.messages.info.register.noaccount">You don't have an account yet?</Translate>
-              </span>{' '}
-              <Link to="/register">
-                <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
-              </Link>
-            </Alert>
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={handleClose} tabIndex="1">
