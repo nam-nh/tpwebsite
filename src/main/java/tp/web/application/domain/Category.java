@@ -35,7 +35,7 @@ public class Category implements Serializable {
     @Column(name = "category_description")
     private String categoryDescription;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<ItemGroup> itemGroups = new HashSet<>();
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove

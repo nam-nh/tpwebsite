@@ -40,7 +40,7 @@ public class ItemGroup implements Serializable {
     @JsonIgnoreProperties("itemGroups")
     private Category category;
 
-    @OneToMany(mappedBy = "itemGroup")
+    @OneToMany(mappedBy = "itemGroup", fetch = FetchType.EAGER)
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<ItemSubGroup> itemSubGroups = new HashSet<>();
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
